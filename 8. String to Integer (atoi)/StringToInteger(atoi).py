@@ -1,10 +1,10 @@
 class Solution:
-    # https://leetcode.com/problems/string-to-integer-atoi/
     def myAtoi(self, s: str) -> int:
         """
-        Converts a string to an integer. Removes leading whitespace, maintains sign, clamps to a 32-bit integer range, and ignores all characters after a non-numeric character.
-
+        Converts a string to an integer.
+        
         :param s: A string consisting of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
+        :returns: The integer representation of s ignoring leading whitespace, maintaining sign, clamped to a 32-bit integer range, and ignoring all character after a non-numeric character.
         """
         # Remove all leading whitespace from the input string.
         s = s.lstrip(' ')
